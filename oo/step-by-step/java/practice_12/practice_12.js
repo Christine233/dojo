@@ -66,7 +66,7 @@ class Class{
         stu.append = 1;
     }
     isIn(stu){
-        if(this.number === stu.klass){
+        if(this.number === stu.klass.number){
             return true;
         }else {
             return false;

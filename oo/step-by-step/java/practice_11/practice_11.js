@@ -62,7 +62,7 @@ class Class{
         stu.append = 1;
     }
     isIn(stu){
-        if(this.number === stu.klass){
+        if(this.number === stu.klass.number){
             return true;
         }else {
             return false;
@@ -87,6 +87,8 @@ leaderStudent.klass.assignLeader(leaderStudent);
 let notStudent = new Student(2015211104,'notTom',21,4);
 leaderStudent.klass.appendMember(leaderStudent);
 
+let notInStudent = new Student(2015211000,'notInTom',21);
+
 console.log(thePerson.introduce()+'\n');
 
 console.log(theTeacher.introduce());
@@ -97,3 +99,4 @@ console.log(nullClassTeacher.introduce()+'\n');
 console.log(theStudent.introduce());
 console.log(leaderStudent.introduce());
 console.log(notStudent.introduce());
+console.log(theStudent.klass.isIn());
